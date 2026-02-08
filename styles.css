@@ -10,17 +10,19 @@ h1 {
     font-weight: normal;
     text-align: center;
     margin-top: 20px;
+    font-size: large;
 }
 
 h2 {
     color: #333;
     font-weight: normal;
     margin-top: 20px;
+    font-size: large;
 }
 
 p {
     color: #666;
-    font-size: 16px;
+    font-size: small;
 }
 
 #header {
@@ -30,12 +32,13 @@ p {
 #title {
     color: white;
     padding: 10px;
+    font-size: xx-large;
+
 }
 
 #tagline {
     color: #fafdff;
     font-weight: bolder;
-    font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
 
@@ -47,7 +50,7 @@ p {
 
 .timeline {
     border: 1px solid hsla(0, 0%, 0%, 0.2);
-    border-left: 2px solid hsl(192, 100%, 50%);
+    border-left: 2px solid #0476ac;
     position: relative;
     list-style: none;
     background-color: #ffffff;
@@ -67,10 +70,25 @@ p {
 }
 
 .timeline .timeline-item:after {
-    background-color: hsl(192, 100%, 50%);;
+    background-color: #0476ac;
+    ;
     left: -26px;
     border-radius: 50%;
     height: 11px;
     width: 11px;
     content: "";
+}
+
+#experience-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: small;
+    color: #666;
+}
+
+hr {
+  border: none; 
+  height: 1px; 
+  background-color: #333;
+  margin: 20px 0;
 }
