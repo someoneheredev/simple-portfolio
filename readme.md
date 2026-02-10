@@ -1,2 +1,3 @@
-### A Simple Portfolio
-A simple portfolio that get's the point across, whilst not looking ugly.
+# Simple Portfolio
+
+A minimal portfolio that gets the point across without looking ugly.  
