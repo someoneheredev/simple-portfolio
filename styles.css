@@ -67,13 +67,18 @@ p {
     padding: 5px;
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.4s, border 0.4s, transform 0.4s;
+    transition: box-shadow 0.5s, border 0.5s, transform 0.5s, background-color 0.3s, color 0.3s;
 }
 
 .card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    border: #0476ac 1px solid;
-    transform: scale(1.01);
+    transform: translateY(-2px);
+
+    background-color: #0476ac;
+}
+
+.card:hover * {
+    color: #ffffff;
 }
 
 .timeline {
@@ -94,7 +99,13 @@ p {
 .timeline .timeline-item:after {
     position: absolute;
     display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     top: 0;
+}
+
+.timeline .timeline-item:hover:after {
+    transform: scale(1.4);
+    box-shadow: 0 0 0 6px rgba(4, 118, 172, 0.2);
 }
 
 .timeline .timeline-item:after {
@@ -111,6 +122,13 @@ p {
     list-style-type: disc;
     padding-left: 20px;
     font-size: small;
+    color: #666;
+}
+
+#generic-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 12px;
     color: #666;
 }
 
